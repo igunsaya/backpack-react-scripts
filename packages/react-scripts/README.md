@@ -23,6 +23,7 @@ npm start
   - `crossOriginLoading`: Modify the default behaviour, see [docs](https://webpack.js.org/configuration/output/#output-crossoriginloading).
   - `babelIncludePrefixes`: An array of module name prefixes to opt into babel compilation. Includes `["bpk-", "saddlebag-"]` by default.
   - `enableAutomaticChunking`: Boolean, opt in to automatic chunking of vendor, common and app code.
+  - `overrideChunkingConfig`: Object, config to override specific chunking groups. See `cacheGroups` in webpack docs. e.g. Allows regex test for chunking certain packages
   - `amdExcludes`: Array of module names to exclude from AMD parsing. Incldues `["lodash"]` by default.
   - `externals`: exposing the Webpack config to modify externals, see [docs](https://webpack.js.org/configuration/externals/).
   - `ssrExternals`: Similar to above, but for `ssr.js` only.
