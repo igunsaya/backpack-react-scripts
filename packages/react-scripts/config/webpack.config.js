@@ -280,7 +280,7 @@ module.exports = function(webpackEnv) {
       splitChunks: bpkReactScriptsConfig.enableAutomaticChunking
         ? {
             chunks: 'all',
-            name: false,
+            name: true,
             cacheGroups: bpkReactScriptsConfig.vendorsChunkRegex
               ? {
                   vendors: {
